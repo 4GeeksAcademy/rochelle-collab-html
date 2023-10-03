@@ -1,9 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Spectral', serif;
+    background-color: antiquewhite;
+}
+
+section {
+    padding-top: 70px;
+    margin-top: -70px;
 }
 
 .navbar .nav-link {
     transition: color 0.3s;
+    font-size: 20px;
 }
 
 .navbar .nav-link:hover {
@@ -17,33 +28,23 @@ body {
 /* Header Jumbotron */
 .jumbotron {
     position: relative;
-    height: 400px;
     overflow: hidden;
 }
 
 
 header .jumbotron-header-first,
 header .jumbotron-header-second {
-    background-color: rgba(139, 0, 0, 0.4);;
+    background-color: rgba(139, 0, 0, 0.4);
+    color: black;
 }
 
 /* Content Styles */
-.right-header {
+.right-header .left-about{
     padding: 40px 0;
     text-align: center;
 }
 
-.right-header img {
-    margin: 20px 0;
-}
-
-/* About Section */
-.left-about {
-    padding: 40px 0;
-    text-align: center;
-}
-
-.left-about img {
+.right-header img .left-about img{
     margin: 20px 0;
 }
 
@@ -53,19 +54,25 @@ header .jumbotron-header-second {
     object-fit: cover;
 }
 
+.portfolio .card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card */
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.card-text {
+    max-height: 50px; /* Adjust as needed */
+    overflow-y: auto;
+}
+
 /* Contact Form */
-.contact {
-    background-color: #f9f9f9;
-    padding: 50px 0;
+.spooky-border {
+    border: 3px solid #8a0000; /* Dark red border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
-.contact h2 {
-    margin-bottom: 30px;
-}
-
-.contact .form-control {
-    border-radius: 0;
-    border: 1px solid #ccc;
+.spooky-border:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8); /* More prominent shadow on hover */
 }
 
 /* Footer Styles */
@@ -80,12 +87,6 @@ footer a {
 
 footer a:hover {
     color: #fff;
-}
-
-.portfolio .card:hover {
-    transform: scale(1.05); /* Slightly enlarges the card */
-    transition: transform 0.3s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
 
