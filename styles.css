@@ -6,7 +6,7 @@ body {
     font-family: 'Spectral', serif;
     color: antiquewhite;
     background-color: #030202;
-    background-image: linear-gradient(326deg, #030202 0%, #8b000066);
+    background-image: linear-gradient(326deg, #030202a1 0%, #f14d4d9a);
     cursor: url('spider_cursor.png'), auto; /* Cursor Style */
 }
 
