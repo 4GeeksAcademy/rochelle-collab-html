@@ -4,7 +4,9 @@ html {
 
 body {
     font-family: 'Spectral', serif;
-    background-color: antiquewhite;
+    color: antiquewhite;
+    background-color: #030202;
+    background-image: linear-gradient(326deg, #030202 0%, #8b000066);
 }
 
 section {
@@ -31,22 +33,22 @@ section {
     overflow: hidden;
 }
 
-
 header .jumbotron-header-first,
 header .jumbotron-header-second {
-    background-color: rgba(139, 0, 0, 0.4);
+    background-color: #8b000066;
     color: black;
 }
 
 /* Content Styles */
-.right-header .left-about{
+/*.right-header .left-about{
     padding: 40px 0;
     text-align: center;
 }
 
 .right-header img .left-about img{
     margin: 20px 0;
-}
+}*/
+
 
 /* Portfolio Styles */
 .portfolio .card-img-top {
@@ -124,4 +126,9 @@ footer a:hover {
     background: linear-gradient(to bottom, #8a0000, #550000);
     border-radius: 50% 50% 50% 50%/ 60% 60% 40% 40%;
     animation: drip 3s cubic-bezier(1,0,.91,.19) infinite;
+}
+
+/* Cursor Style */
+body {
+    cursor: url('./spider_cursor.png'), auto;
 }
